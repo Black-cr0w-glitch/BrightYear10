@@ -1,1 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Thank You, CONNECT Teachers!</title>
+<style>
+    body {
+        margin: 0;
+        background: linear-gradient(135deg, #6a9ffb, #a26bfa);
+        font-family: "Segoe UI", sans-serif;
+        color: white;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .title {
+        font-size: 3rem;
+        font-weight: 700;
+        margin-top: 80px;
+        animation: fadeIn 2s ease;
+    }
+
+    .typing {
+        width: 24ch;
+        margin: 30px auto;
+        font-size: 1.6rem;
+        border-right: 3px solid white;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 3.5s steps(24), blink .75s step-end infinite;
+    }
+
+    @keyframes typing {
+        from { width: 0 }
+    }
+    @keyframes blink {
+        50% { border-color: transparent; }
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(6px);
+        border-radius: 15px;
+        width: 250px;
+        padding: 20px;
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card h3 {
+        margin-top: 0;
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .footer {
+        margin-top: 60px;
+        font-size: 0.9rem;
+        opacity: 0.8;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
+</head>
+
+<body>
+    <div class="title">Thank You, CONNECT Teachers!</div>
+
+    <div class="typing">You made Year 10 amazing.</div>
+
+    <div class="container">
+        <!-- Duplicate these cards or change names as needed -->
+        <div class="card">
+            <h3>Mr Smith</h3>
+            <p>Thank you for your support, patience, and guidance!</p>
+        </div>
+
+        <div class="card">
+            <h3>Ms Johnson</h3>
+            <p>Your lessons and encouragement made a huge difference.</p>
+        </div>
+
+        <div class="card">
+            <h3>Mr Brown</h3>
+            <p>Thank you for always helping us grow and improve!</p>
+        </div>
+    </div>
+
+    <div class="footer">Made with ❤️ by Year 10</div>
+</body>
+</html>
 
