@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Thank You CONNECT Teachers!</title>
+<title>Thank You Connect Teachers!</title>
 <style>
     body {
         margin: 0;
@@ -29,6 +29,7 @@
         text-shadow: 0 0 15px rgba(255,255,255,0.7);
     }
 
+    /* FIXED: cursor disappears after typing */
     .typing {
         font-size: 1.8rem;
         margin-top: 25px;
@@ -38,13 +39,14 @@
         white-space: nowrap;
         margin-left: auto;
         margin-right: auto;
-        animation: typing 4s steps(30), blink .75s step-end infinite;
+        animation: typing 4s steps(30), blink .75s step-end 4s forwards;
         text-shadow: 0 0 10px rgba(255,255,255,0.6);
     }
 
     @keyframes typing {
         from { width: 0 }
     }
+
     @keyframes blink {
         50% { border-color: transparent; }
     }
@@ -90,6 +92,7 @@
         opacity: 0.7;
         animation: fall linear infinite;
         border-radius: 3px;
+        z-index: 1;
     }
 
     @keyframes fall {
@@ -114,7 +117,7 @@
         }
     </script>
 
-    <div class="title">Thank You CONNECT Teachers!</div>
+    <div class="title">Thank You Connect Teachers!</div>
 
     <div class="typing">You make every year brighter.</div>
 
