@@ -29,7 +29,7 @@
         text-shadow: 0 0 15px rgba(255,255,255,0.7);
     }
 
-    /* Typing animation with smooth cursor fade */
+    /* Typing animation with cursor removed by border-width shrinking */
     .typing {
         font-size: 1.8rem;
         margin-top: 25px;
@@ -57,7 +57,10 @@
     }
 
     @keyframes cursorFade {
-        to { border-color: transparent; }
+        to {
+            border-color: transparent;
+            border-width: 0;
+        }
     }
 
     .message-box {
@@ -141,3 +144,4 @@
 
 </body>
 </html>
+
