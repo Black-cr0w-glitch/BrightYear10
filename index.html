@@ -29,7 +29,7 @@
         text-shadow: 0 0 15px rgba(255,255,255,0.7);
     }
 
-    /* FIXED: cursor disappears after typing */
+    /* Typing animation with cursor removed after typing */
     .typing {
         font-size: 1.8rem;
         margin-top: 25px;
@@ -39,16 +39,20 @@
         white-space: nowrap;
         margin-left: auto;
         margin-right: auto;
-        animation: typing 4s steps(30), blink .75s step-end 4s forwards;
+        animation:
+            typing 3.5s steps(30) forwards,
+            blink .75s step-end 3.5s forwards;
         text-shadow: 0 0 10px rgba(255,255,255,0.6);
     }
 
     @keyframes typing {
-        from { width: 0 }
+        from { width: 0; }
+        to { width: 100%; }
     }
 
     @keyframes blink {
-        50% { border-color: transparent; }
+        0%, 100% { border-color: transparent; }
+        50% { border-color: white; }
     }
 
     .message-box {
@@ -132,3 +136,4 @@
 
 </body>
 </html>
+
